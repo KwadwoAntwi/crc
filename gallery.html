@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="address-header">
+        <a href="#home" class = "address-logo">
+			<img src="images/Logo.png" alt="ChurchLogo" ></a>
+        <div class="right-side">
+            <div class="address-content">
+                <i class='bx bx-location-plus'></i>
+                <span>
+                    <p>Christ Resurrection Church</p>
+                    <p>Ghana</p>
+                </span>
+            </div>
+            <div class="email-content">
+                <i class='bx bx-envelope' ></i>
+                <span>
+                    <p>crc@gmail.com</p>                    
+                </span>
+            </div>
+            <div class="phone-content">
+                <i class='bx bx-phone' ></i>
+                <span>
+                    <p>+233 000 000 0000</p>                    
+                </span>
+            </div>
+        </div>
+    </header>
+    
+    <header class="header">
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <div class="menu-content">
+            <nav class="navbar">
+                <a href="index.html#home" class="active">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#education">History</a>
+                <a href="index.html#services">Core Values</a>
+                <a href="index.html#testimonials">Highlights</a>
+                <a href="index.html#executives">Executives</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+        
+            <div class="btn-group">
+                <span>
+                    <input type="text" placeholder="Search for...">
+                    <a href="#search" class = "search"><i class='bx bx-search-alt-2'></i></a>
+                </span>
+                <a href="#donate" class="btn">Donate</a>
+            </div>
+        </div>
+    </header>
+
+  <section class="gallery">
+    <h2 class="heading">Gallery</h2>
+    <div class="wrapper">
+      <div class="gallery-item"><img src="images/DSC_4426.JPG" alt="Gallery Image 1" onclick="openLightbox(this)"></div>
+      <div class="gallery-item"><img src="images/DSC_4552.JPG" alt="Gallery Image 2" onclick="openLightbox(this)"></div>
+      <div class="gallery-item"><img src="images/DSCF0411.JPG" alt="Gallery Image 3" onclick="openLightbox(this)"></div>
+      <div class="gallery-item"><img src="images/DSCF0508.JPG" alt="Gallery Image 4" onclick="openLightbox(this)"></div>
+      <div class="gallery-item"><img src="images/DSCF0683.JPG" alt="Gallery Image 5" onclick="openLightbox(this)"></div>
+      <div class="gallery-item"><img src="images/firstexecutives.jpg" alt="Gallery Image 6" onclick="openLightbox(this)"></div>
+      <div class="gallery-item"><img src="images/IMG_0476.JPG" alt="Gallery Image 7" onclick="openLightbox(this)"></div>
+      <div class="gallery-item"><img src="images/IMG_0479.JPG" alt="Gallery Image 8" onclick="openLightbox(this)"></div>
+      <div class="gallery-item"><img src="images/SDC10829.JPG" alt="Gallery Image 9" onclick="openLightbox(this)"></div>
+      <div class="gallery-item"><img src="images/SDC10830 - Copy.JPG" alt="Gallery Image 10" onclick="openLightbox(this)"></div>
+      <div class="gallery-item"><img src="images/SDC10832.JPG" alt="Gallery Image 11" onclick="openLightbox(this)"></div>
+      <div class="gallery-item"><img src="images/SDC10890 - Copy.JPG" alt="Gallery Image 12" onclick="openLightbox(this)"></div>
+      <div class="gallery-item"><img src="images/SDC10897.JPG" alt="Gallery Image 13" onclick="openLightbox(this)"></div>
+      <div class="gallery-item"><img src="images/SDC10898.JPG" alt="Gallery Image 14" onclick="openLightbox(this)"></div>
+      <div class="gallery-item"><img src="images/SDC10910.JPG" alt="Gallery Image 15" onclick="openLightbox(this)"></div>
+      <div class="gallery-item"><img src="images/SDC10918 - Copy.JPG" alt="Gallery Image 16" onclick="openLightbox(this)"></div>
+      <div class="gallery-item"><img src="images/SDC10793 - Copy - Copy.JPG" alt="Gallery Image 17" onclick="openLightbox(this)"></div>
+    </div>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" class="lightbox-content">
+    </div>
+  </section>
+  
+  <script src="script.js"></script>
+</body>
+</html>
