@@ -40,6 +40,32 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
 
+
+
+
+  document.getElementById('orderForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+  
+    const item = document.getElementById('itemName').value;
+    const name = this.querySelector('input[placeholder="Full Name"]').value;
+    const phone = this.querySelector('input[placeholder="Phone Number"]').value;
+    const email = this.querySelector('input[placeholder="Email Address"]').value;
+    const address = this.querySelector('textarea').value;
+  
+    const subject = `New Order: ${item}`;
+    const body = `Name: ${name}%0D%0APhone: ${phone}%0D%0AEmail: ${email}%0D%0AAddress: ${address}%0D%0AItem: ${item}`;
+  
+    const mailtoLink = `mailto:40thanniversarycrc@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+  
+    window.location.href = mailtoLink;
+  
+    closeModal();
+  });
+
+
+
+
+
   window.openLightbox = function(img) {
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
